@@ -1,0 +1,396 @@
+Rank,City,Price To Income Ratio,Gross Rental Yield City Centre,Gross Rental Yield Outside of Centre,Price To Rent Ratio City Centre,Price To Rent Ratio Outside Of City Centre,Mortgage As A Percentage Of Income,Affordability Index
+1,Colombo - Sri Lanka,55.1,2.8,3.6,35.2,28.1,853.6,0.1
+2,Kathmandu - Nepal,39.2,1.7,1.5,58.6,66.7,462.7,0.2
+3,Manila - Philippines,35.9,3.7,2.8,26.8,35.7,344.0,0.3
+4,Shanghai - China,34.2,1.6,1.7,63.5,57.6,235.5,0.4
+5,Xiamen - China,33.9,1.0,1.2,98.4,83.1,237.6,0.4
+6,Cebu - Philippines,33.7,4.0,3.4,25.0,29.1,313.1,0.3
+7,Taipei - Taiwan,33.6,1.3,1.5,76.2,66.7,210.2,0.5
+8,Mumbai - India,33.3,2.7,3.2,37.5,31.0,357.3,0.3
+9,Beijing - China,32.9,1.7,2.0,59.4,50.1,229.5,0.4
+10,Ho Chi Minh City - Vietnam,32.2,3.1,3.9,32.8,25.8,337.1,0.3
+11,Phnom Penh - Cambodia,31.4,4.5,5.4,22.0,18.5,322.6,0.3
+12,Hanoi - Vietnam,31.1,2.4,2.9,42.3,34.2,307.9,0.3
+13,Hong Kong - Hong Kong (China),30.9,2.3,2.5,44.1,40.6,221.0,0.5
+14,Bangkok - Thailand,28.7,3.2,2.6,31.7,37.8,242.0,0.4
+15,San Salvador - El Salvador,28.6,7.2,8.7,13.9,11.4,297.7,0.3
+16,Shenzhen - China,28.5,1.4,1.7,69.8,57.3,202.2,0.5
+17,Algiers - Algeria,28.4,2.0,2.3,50.5,42.7,230.8,0.4
+18,Seoul - South Korea,27.2,1.0,1.1,102.1,92.3,198.3,0.5
+19,Tehran - Iran,26.0,7.2,8.2,13.8,12.2,678.5,0.1
+20,Pattaya - Thailand,25.7,5.1,4.5,19.5,22.4,205.3,0.5
+21,Rawalpindi - Pakistan,25.1,3.8,4.0,26.6,25.0,545.7,0.2
+22,Alexandria - Egypt,23.5,4.3,3.5,23.3,28.9,400.8,0.2
+23,Beirut - Lebanon,23.1,5.4,5.4,18.5,18.7,284.3,0.4
+24,Hangzhou - China,22.4,1.7,1.8,60.5,54.3,158.8,0.6
+25,Jakarta - Indonesia,22.3,4.2,4.6,23.6,21.9,252.0,0.4
+26,Guangzhou - China,22.1,1.5,1.9,64.5,53.8,155.9,0.6
+27,Singapore - Singapore,22.1,2.9,2.9,34.3,34.8,145.9,0.7
+28,Yerevan - Armenia,21.8,4.9,7.0,20.5,14.3,354.2,0.3
+29,Moscow - Russia,21.6,3.2,4.0,31.2,25.1,506.1,0.2
+30,Rio de Janeiro - Brazil,21.1,4.4,5.9,22.7,16.8,261.1,0.4
+31,Tel Aviv-Yafo - Israel,20.9,2.1,2.3,47.7,43.5,171.7,0.6
+32,Medellin - Colombia,20.6,4.7,6.9,21.2,14.5,256.7,0.4
+33,Lahore - Pakistan,20.3,4.4,3.4,22.9,29.4,354.9,0.3
+34,Lisbon - Portugal,19.7,4.8,5.8,20.7,17.1,139.1,0.7
+35,Islamabad - Pakistan,19.1,4.0,4.1,25.2,24.4,319.4,0.3
+36,Prague - Czech Republic,18.9,2.9,2.9,34.8,34.1,145.9,0.7
+37,Nanjing - China,18.8,1.9,2.0,53.2,50.6,132.1,0.8
+38,Jerusalem - Israel,18.6,2.2,2.7,45.6,36.7,147.5,0.7
+39,Caracas - Venezuela,18.6,8.3,13.2,12.0,7.6,413.8,0.2
+40,Cairo - Egypt,18.1,6.3,7.2,16.0,13.8,330.1,0.3
+41,Bogota - Colombia,18.0,5.6,5.8,17.9,17.1,240.8,0.4
+42,Guadalajara - Mexico,17.5,6.2,5.7,16.0,17.6,216.9,0.5
+43,Split - Croatia,17.4,3.5,3.5,28.9,28.6,121.2,0.8
+44,Kazan - Russia,17.1,3.7,3.6,26.7,28.2,335.0,0.3
+45,Fortaleza - Brazil,16.9,3.6,4.3,27.6,23.5,219.4,0.5
+46,Tirana - Albania,16.9,4.9,5.8,20.2,17.2,140.7,0.7
+47,Suzhou - China,16.7,1.8,1.8,56.2,55.7,117.8,0.8
+48,Santiago - Chile,16.6,4.4,3.3,22.6,30.5,135.6,0.7
+49,Karachi - Pakistan,16.5,4.5,4.6,22.3,21.8,269.3,0.4
+50,Belgrade - Serbia,16.5,4.2,4.4,23.9,22.7,130.1,0.8
+51,Monterrey - Mexico,16.4,5.4,5.6,18.6,17.9,211.1,0.5
+52,Baku - Azerbaijan,16.2,5.0,5.1,20.0,19.5,177.1,0.6
+53,Curitiba - Brazil,16.1,4.4,4.0,22.6,25.0,198.7,0.5
+54,Paris - France,15.9,2.7,2.9,37.5,35.0,108.9,0.9
+55,Novi Sad - Serbia,15.8,3.5,3.7,29.0,27.2,135.7,0.7
+56,Tbilisi - Georgia,15.8,7.1,7.4,14.2,13.4,207.5,0.5
+57,Nizhny Novgorod - Russia,15.6,4.3,4.3,23.5,23.3,301.0,0.3
+58,Milan - Italy,15.4,3.6,5.2,27.6,19.4,102.8,1.0
+59,Sao Paulo - Brazil,15.4,5.7,5.1,17.6,19.6,203.3,0.5
+60,London - United Kingdom,15.4,3.3,4.7,30.3,21.4,118.4,0.8
+61,Bishkek - Kyrgyzstan,15.4,7.4,7.3,13.5,13.6,316.7,0.3
+62,Recife - Brazil,15.3,5.0,6.2,19.8,16.2,198.9,0.5
+63,Merida - Mexico,15.2,6.4,8.2,15.6,12.2,197.7,0.5
+64,Tokyo - Japan,15.2,2.5,3.0,40.7,32.9,88.3,1.1
+65,Belo Horizonte - Brazil,15.1,5.4,6.4,18.6,15.7,186.4,0.5
+66,Mexico City - Mexico,15.0,7.7,7.2,13.0,13.9,194.3,0.5
+67,Casablanca - Morocco,15.0,6.2,6.3,16.0,15.9,119.1,0.8
+68,Buenos Aires - Argentina,15.0,5.5,5.4,18.1,18.7,788.6,0.1
+69,Pristina - Kosovo,15.0,3.1,4.0,32.3,25.2,108.7,0.9
+70,Brno - Czech Republic,14.9,3.3,3.2,30.2,31.1,115.4,0.9
+71,Porto - Portugal,14.8,5.4,5.5,18.4,18.1,101.3,1.0
+72,Bratislava - Slovakia,14.8,3.6,3.8,28.0,26.0,108.0,0.9
+73,Brasilia - Brazil,14.7,4.5,3.9,22.4,25.7,193.9,0.5
+74,Lima - Peru,14.7,6.6,5.5,15.2,18.1,160.7,0.6
+75,Ljubljana - Slovenia,14.7,3.8,3.8,26.5,26.2,104.6,1.0
+76,Nairobi - Kenya,14.6,7.4,6.0,13.6,16.7,230.7,0.4
+77,Florianopolis - Brazil,14.6,4.8,5.6,20.8,18.0,182.5,0.5
+78,Saint Petersburg - Russia,14.4,4.5,4.2,22.1,23.8,337.4,0.3
+79,Sarajevo - Bosnia And Herzegovina,14.4,3.4,3.2,29.3,31.6,106.2,0.9
+80,Rome - Italy,14.3,3.8,5.6,26.4,17.9,101.4,1.0
+81,Delhi - India,14.3,2.9,3.7,34.9,27.3,157.9,0.6
+82,Heraklion - Greece,14.3,3.6,4.1,28.1,24.5,108.0,0.9
+83,Budapest - Hungary,14.3,3.3,3.7,30.4,26.7,132.5,0.8
+84,Athens - Greece,14.3,3.8,3.7,26.1,27.3,110.1,0.9
+85,Santo Domingo - Dominican Republic,14.2,7.4,6.6,13.5,15.1,210.2,0.5
+86,Porto Alegre - Brazil,14.1,5.8,5.1,17.2,19.5,172.0,0.6
+87,Dhaka - Bangladesh,14.0,3.0,3.4,33.0,29.1,169.7,0.6
+88,Thessaloniki - Greece,13.9,3.4,3.7,29.1,27.0,113.9,0.9
+89,Chiang Mai - Thailand,13.9,4.7,3.8,21.2,26.3,119.0,0.8
+90,Tunis - Tunisia,13.8,4.8,5.3,20.7,19.0,161.7,0.6
+91,Cluj-Napoca - Romania,13.7,3.6,3.7,27.9,26.8,118.9,0.8
+92,Chengdu - China,13.7,2.3,2.6,43.2,38.9,97.3,1.0
+93,Krasnodar - Russia,13.6,4.3,4.5,23.2,22.3,302.2,0.3
+94,Chisinau - Moldova,13.5,5.9,5.9,17.1,16.9,143.8,0.7
+95,New York - United States,13.5,4.8,7.1,20.7,14.0,120.3,0.8
+96,Palma de Mallorca - Spain,13.4,4.1,5.7,24.3,17.5,91.4,1.1
+97,Nis - Serbia,13.2,3.2,3.2,31.3,31.4,108.2,0.9
+98,Patna - India,13.2,1.8,2.6,56.6,39.2,144.2,0.7
+99,Panama City - Panama,13.2,8.2,11.3,12.2,8.9,117.4,0.9
+100,Zurich - Switzerland,13.1,2.4,2.8,41.2,36.3,80.9,1.2
+101,Campinas - Brazil,13.0,5.0,5.9,20.2,17.0,160.9,0.6
+102,Stockholm - Sweden,13.0,2.9,3.5,34.8,28.3,92.4,1.1
+103,Vilnius - Lithuania,13.0,3.0,3.9,33.5,25.7,97.7,1.0
+104,Skopje - North Macedonia,13.0,3.4,3.7,29.1,26.8,97.2,1.0
+105,Geneva - Switzerland,13.0,2.6,2.6,38.2,38.6,80.5,1.2
+106,Florence - Italy,12.9,4.5,4.9,22.3,20.2,87.1,1.1
+107,Montevideo - Uruguay,12.9,3.8,4.7,26.5,21.1,108.3,0.9
+108,Rijeka - Croatia,12.9,3.8,3.0,26.0,32.9,94.6,1.1
+109,Gurgaon - India,12.8,3.0,2.9,33.3,34.3,137.2,0.7
+110,Madrid - Spain,12.7,3.9,5.0,25.7,20.2,85.8,1.2
+111,Warsaw - Poland,12.7,3.8,4.8,26.3,21.0,121.0,0.8
+112,Gdansk - Poland,12.6,3.5,4.2,28.8,23.5,119.8,0.8
+113,Sydney - Australia,12.6,4.0,4.4,24.7,22.8,109.7,0.9
+114,Vienna - Austria,12.6,2.2,3.1,44.5,32.7,86.8,1.2
+115,Bhubaneswar - India,12.5,2.8,3.8,35.9,26.2,128.1,0.8
+116,Kaliningrad - Russia,12.3,4.6,4.5,21.7,22.0,215.1,0.5
+117,Mississauga - Canada,12.3,4.1,4.8,24.7,20.7,98.8,1.0
+118,Krakow - Poland,12.3,3.4,4.2,29.1,23.9,117.4,0.9
+119,Brasov - Romania,12.3,5.2,4.6,19.3,21.6,120.7,0.8
+120,Kiev (Kyiv) - Ukraine,12.3,6.0,6.5,16.6,15.3,236.5,0.4
+121,Tyumen - Russia,12.3,5.6,5.6,18.0,17.7,274.2,0.4
+122,Novosibirsk - Russia,12.2,4.7,5.3,21.5,19.0,246.0,0.4
+123,Barcelona - Spain,12.2,4.7,5.4,21.2,18.6,82.7,1.2
+124,Dushanbe - Tajikistan,12.2,9.4,10.7,10.7,9.4,283.6,0.4
+125,Lausanne - Switzerland,12.1,2.3,2.6,43.2,38.5,75.5,1.3
+126,Bolzano-Bozen - Italy,12.1,3.0,3.7,33.5,27.2,88.7,1.1
+127,Vancouver - Canada,11.9,4.6,4.7,21.5,21.2,90.2,1.1
+128,Sliema - Malta,11.9,6.4,7.5,15.7,13.4,85.6,1.2
+129,Tomsk - Russia,11.9,5.2,4.8,19.4,21.0,276.5,0.4
+130,Coimbatore - India,11.9,3.1,3.6,32.4,27.8,137.3,0.7
+131,Munich - Germany,11.9,3.1,3.4,32.5,29.2,85.7,1.2
+132,Tashkent - Uzbekistan,11.8,7.3,8.8,13.7,11.3,270.8,0.4
+133,Constanta - Romania,11.7,5.3,4.9,19.0,20.5,108.0,0.9
+134,Lugano - Switzerland,11.7,2.3,2.7,43.4,37.6,73.4,1.4
+135,Zagreb - Croatia,11.7,3.4,3.9,29.7,25.7,79.8,1.3
+136,Wroclaw - Poland,11.7,4.2,4.4,24.0,22.8,113.0,0.9
+137,Kosice - Slovakia,11.7,5.1,5.3,19.5,18.8,85.3,1.2
+138,Oslo - Norway,11.6,3.4,4.0,29.6,25.2,94.6,1.1
+139,Batumi - Georgia,11.6,7.5,7.7,13.4,13.0,157.8,0.6
+140,Yekaterinburg - Russia,11.6,5.9,6.5,16.9,15.3,220.5,0.5
+141,Lucknow - India,11.5,3.0,3.5,33.6,28.7,120.3,0.8
+142,Toronto - Canada,11.4,4.0,4.3,24.8,23.4,85.7,1.2
+143,Podgorica - Montenegro,11.4,5.1,4.9,19.6,20.3,94.4,1.1
+144,Ulaanbaatar - Mongolia,11.4,9.0,12.2,11.1,8.2,110.6,0.9
+145,Valletta - Malta,11.2,5.7,5.7,17.5,17.4,89.2,1.1
+146,Tallinn - Estonia,11.2,3.4,3.7,29.3,26.9,84.6,1.2
+147,Malaga - Spain,11.1,5.5,7.1,18.3,14.1,78.0,1.3
+148,Nice - France,11.0,3.6,4.8,28.1,20.9,79.3,1.3
+149,San Jose - Costa Rica,10.9,9.1,8.1,11.0,12.4,123.1,0.8
+150,Istanbul - Turkey,10.9,7.1,8.7,14.1,11.5,469.5,0.2
+151,Varna - Bulgaria,10.9,4.0,4.4,24.9,22.7,75.0,1.3
+152,Rabat - Morocco,10.8,6.2,6.7,16.2,14.9,82.7,1.2
+153,Iasi - Romania,10.8,3.9,4.6,25.6,22.0,102.0,1.0
+154,Naples - Italy,10.7,4.8,6.1,20.7,16.4,76.8,1.3
+155,Craiova - Romania,10.7,3.9,3.5,25.3,28.2,98.2,1.0
+156,Bucharest - Romania,10.7,3.9,4.3,25.9,23.0,101.3,1.0
+157,Helsinki - Finland,10.7,2.8,4.0,36.1,24.9,76.6,1.3
+158,Berlin - Germany,10.6,3.7,3.8,27.2,26.0,75.2,1.3
+159,Brighton - United Kingdom,10.6,4.6,5.0,21.9,19.8,84.8,1.2
+160,Chongqing - China,10.5,2.9,2.6,34.0,38.7,75.1,1.3
+161,Bologna - Italy,10.5,4.6,4.8,21.8,20.8,71.9,1.4
+162,Haifa - Israel,10.5,2.4,2.7,41.0,36.7,84.9,1.2
+163,Bern - Switzerland,10.5,2.5,2.4,40.4,41.9,66.9,1.5
+164,Heidelberg - Germany,10.5,3.6,4.3,28.1,23.2,75.8,1.3
+165,Wuhan - China,10.4,2.7,2.8,37.4,35.9,72.7,1.4
+166,Auckland - New Zealand,10.4,3.8,4.1,26.5,24.2,90.7,1.1
+167,Kaunas - Lithuania,10.4,3.4,3.9,29.3,25.8,76.5,1.3
+168,Minsk - Belarus,10.4,5.4,5.6,18.4,18.0,168.5,0.6
+169,Almaty - Kazakhstan,10.3,8.3,8.9,12.1,11.3,202.6,0.5
+170,Guildford - United Kingdom,10.3,4.7,4.3,21.2,23.4,87.9,1.1
+171,Sofia - Bulgaria,10.2,4.0,4.6,24.9,21.8,68.0,1.5
+172,Oradea - Romania,10.2,4.1,3.3,24.4,29.9,97.3,1.0
+173,Burgas - Bulgaria,10.2,4.7,5.2,21.2,19.2,70.0,1.4
+174,Dnipro - Ukraine,10.2,7.9,8.0,12.7,12.5,181.0,0.6
+175,Antalya - Turkey,10.2,4.6,6.6,21.6,15.3,389.4,0.3
+176,Bilbao - Spain,10.2,4.2,5.1,23.5,19.5,68.1,1.5
+177,Luxembourg - Luxembourg,10.2,3.8,4.5,26.4,22.0,71.5,1.4
+178,Oxford - United Kingdom,10.0,5.4,5.0,18.6,19.9,82.3,1.2
+179,Kolkata - India,9.9,3.3,3.8,29.9,26.3,111.9,0.9
+180,Honolulu - United States,9.9,6.6,5.6,15.1,17.8,87.6,1.1
+181,Cambridge - United Kingdom,9.8,4.4,5.4,22.8,18.5,78.0,1.3
+182,Trento - Italy,9.8,4.7,5.1,21.4,19.5,72.7,1.4
+183,Quito - Ecuador,9.8,5.8,9.8,17.1,10.2,119.9,0.8
+184,Plzen - Czech Republic,9.7,2.9,3.6,34.0,28.0,75.9,1.3
+185,Cuenca - Ecuador,9.6,7.3,7.9,13.8,12.7,123.3,0.8
+186,Bordeaux - France,9.6,3.0,3.1,33.8,32.2,69.9,1.4
+187,Adelaide - Australia,9.6,3.8,4.9,26.3,20.6,84.4,1.2
+188,Sibiu - Romania,9.6,4.3,4.3,23.3,23.3,87.5,1.1
+189,Basel - Switzerland,9.6,2.6,2.6,38.8,38.8,60.3,1.7
+190,Canberra - Australia,9.4,4.3,4.3,23.2,23.3,80.8,1.2
+191,Haarlem - Netherlands,9.3,4.8,5.2,20.8,19.3,67.8,1.5
+192,Amsterdam - Netherlands,9.3,5.1,5.6,19.6,18.0,65.9,1.5
+193,Bialystok - Poland,9.3,4.1,4.3,24.6,23.4,86.7,1.2
+194,Dusseldorf - Germany,9.2,3.0,4.1,33.8,24.5,67.0,1.5
+195,Hamburg - Germany,9.2,3.3,3.9,30.8,25.6,65.9,1.5
+196,Kharkiv - Ukraine,9.2,5.2,4.9,19.2,20.6,168.9,0.6
+197,Victoria - Canada,9.2,5.6,6.3,17.9,15.8,75.5,1.3
+198,Wellington - New Zealand,9.1,3.8,5.8,26.3,17.3,81.0,1.2
+199,Kuala Lumpur - Malaysia,9.1,3.7,5.2,26.7,19.2,68.9,1.5
+200,Timisoara - Romania,9.0,4.0,4.2,25.1,24.0,82.9,1.2
+201,Szczecin - Poland,9.0,4.3,4.5,23.2,22.0,80.9,1.2
+202,Queretaro - Mexico,9.0,8.0,9.4,12.5,10.6,114.5,0.9
+203,Cologne - Germany,9.0,3.6,3.9,28.1,25.9,64.2,1.6
+204,Braga - Portugal,8.9,7.5,7.3,13.3,13.8,67.4,1.5
+205,Bristol - United Kingdom,8.9,5.6,5.6,18.0,17.8,70.1,1.4
+206,Gold Coast - Australia,8.9,5.0,5.9,19.9,17.0,77.8,1.3
+207,Copenhagen - Denmark,8.9,4.3,4.4,23.0,22.9,63.6,1.6
+208,Plovdiv - Bulgaria,8.8,4.6,5.3,21.9,19.0,60.3,1.7
+209,Poznan - Poland,8.8,4.6,5.0,21.7,19.8,82.8,1.2
+210,Seville - Spain,8.8,4.4,7.2,22.5,13.8,60.7,1.6
+211,Quebec City - Canada,8.8,2.7,5.6,36.7,17.9,71.9,1.4
+212,Amman - Jordan,8.7,6.4,6.8,15.7,14.7,83.2,1.2
+213,Espoo - Finland,8.7,3.4,4.1,29.1,24.3,61.9,1.6
+214,Tartu - Estonia,8.7,3.8,3.7,26.2,27.2,64.7,1.5
+215,Dublin - Ireland,8.7,6.3,7.2,15.8,13.9,61.6,1.6
+216,Trieste - Italy,8.6,4.4,6.2,22.6,16.1,63.0,1.6
+217,Fethiye - Turkey,8.6,6.0,7.2,16.6,14.0,352.7,0.3
+218,Valencia - Spain,8.6,5.5,6.3,18.2,15.8,58.1,1.7
+219,Marseille - France,8.6,3.5,4.3,28.8,23.1,61.7,1.6
+220,Penang - Malaysia,8.5,3.7,4.6,26.7,21.9,65.1,1.5
+221,Lyon - France,8.5,3.2,3.5,31.7,28.9,61.0,1.6
+222,Delft - Netherlands,8.5,5.0,5.8,20.2,17.1,65.3,1.5
+223,Lodz - Poland,8.5,4.3,4.5,23.2,22.3,79.8,1.3
+224,Limassol - Cyprus,8.5,6.2,6.1,16.2,16.4,61.5,1.6
+225,Changsha - China,8.4,2.5,3.0,39.8,33.0,59.5,1.7
+226,Harare - Zimbabwe,8.4,10.3,20.0,9.7,5.0,120.8,0.8
+227,Riga - Latvia,8.4,4.3,4.5,23.1,22.4,64.9,1.5
+228,San Jose - United States,8.4,6.7,5.5,14.9,18.0,74.6,1.3
+229,Larnaca - Cyprus,8.4,5.5,7.3,18.1,13.7,60.6,1.6
+230,Padova - Italy,8.3,5.1,6.9,19.7,14.5,57.3,1.7
+231,Montpellier - France,8.3,3.8,3.9,26.4,25.9,59.7,1.7
+232,Kuwait City - Kuwait,8.3,4.0,7.0,25.3,14.3,74.5,1.3
+233,Ostrava - Czech Republic,8.3,4.8,4.7,20.9,21.2,66.3,1.5
+234,Karlsruhe - Germany,8.3,3.5,4.8,28.4,20.9,59.8,1.7
+235,Toulouse - France,8.3,3.2,4.2,31.4,24.0,59.4,1.7
+236,Turin - Italy,8.2,4.0,5.9,24.9,17.1,55.6,1.8
+237,Chennai - India,8.2,2.6,3.9,38.5,25.3,91.7,1.1
+238,Edinburgh - United Kingdom,8.2,5.1,5.4,19.7,18.4,64.7,1.5
+239,Santa Cruz de Tenerife - Spain,8.1,5.7,8.4,17.5,11.9,56.0,1.8
+240,Los Angeles - United States,8.0,7.5,6.5,13.3,15.3,72.2,1.4
+241,Reykjavik - Iceland,8.0,5.9,6.2,17.0,16.2,85.3,1.2
+242,Reading - United Kingdom,8.0,5.7,5.3,17.6,18.8,63.3,1.6
+243,Paphos - Cyprus,7.9,5.6,7.5,17.8,13.3,54.9,1.8
+244,Cagliari - Italy,7.9,6.0,5.9,16.6,16.9,58.2,1.7
+245,Ahmedabad - India,7.9,4.6,4.5,21.6,22.0,84.7,1.2
+246,Ankara - Turkey,7.8,8.4,8.7,11.9,11.5,375.6,0.3
+247,Bangalore - India,7.8,4.3,5.0,23.2,19.8,82.8,1.2
+248,Montreal - Canada,7.8,5.0,5.0,20.2,20.1,59.0,1.7
+249,Graz - Austria,7.8,2.9,4.2,35.0,23.7,54.3,1.8
+250,Katowice - Poland,7.7,4.6,5.3,21.6,18.9,73.3,1.4
+251,Nuremberg - Germany,7.7,2.8,4.1,35.4,24.6,55.8,1.8
+252,Guelph - Canada,7.7,6.1,5.8,16.5,17.1,64.5,1.5
+253,Surat - India,7.6,7.3,16.8,13.6,5.9,84.7,1.2
+254,Stuttgart - Germany,7.6,3.8,4.5,26.6,22.1,54.5,1.8
+255,Pisa - Italy,7.6,5.0,5.5,19.8,18.2,54.1,1.8
+256,Bari - Italy,7.6,5.1,6.6,19.6,15.1,57.0,1.8
+257,Pune - India,7.6,3.2,4.2,31.5,23.9,81.1,1.2
+258,Coimbra - Portugal,7.6,6.7,11.0,14.9,9.1,58.8,1.7
+259,Nicosia - Cyprus,7.6,5.7,6.3,17.5,15.8,56.6,1.8
+260,Augsburg - Germany,7.5,3.6,3.9,27.5,25.6,54.6,1.8
+261,Melbourne - Australia,7.5,5.2,4.5,19.1,22.2,63.6,1.6
+262,Aarhus - Denmark,7.5,3.9,4.2,25.8,23.9,53.7,1.9
+263,Strasbourg - France,7.5,3.8,4.7,26.4,21.2,53.1,1.9
+264,Nottingham - United Kingdom,7.4,5.4,3.9,18.7,25.8,62.0,1.6
+265,Boston - United States,7.4,6.0,8.5,16.7,11.7,65.3,1.5
+266,Brisbane - Australia,7.4,4.9,5.8,20.4,17.3,64.0,1.6
+267,Granada - Spain,7.4,5.0,5.8,19.9,17.3,51.1,2.0
+268,Jaipur - India,7.3,4.0,5.1,25.2,19.7,77.7,1.3
+269,Manchester - United Kingdom,7.3,7.2,5.7,13.8,17.6,60.4,1.7
+270,Groningen - Netherlands,7.3,4.7,4.7,21.1,21.3,51.2,2.0
+271,Bergen - Norway,7.3,4.0,4.5,25.2,22.4,59.1,1.7
+272,Darmstadt - Germany,7.3,4.0,4.3,25.0,23.4,53.1,1.9
+273,Birmingham - United Kingdom,7.2,5.2,5.3,19.3,18.7,59.2,1.7
+274,Christchurch - New Zealand,7.2,4.9,7.9,20.3,12.6,63.8,1.6
+275,Frankfurt - Germany,7.2,3.8,5.3,26.5,18.7,51.8,1.9
+276,Brescia - Italy,7.1,5.8,6.9,17.1,14.6,49.5,2.0
+277,Utrecht - Netherlands,7.1,5.2,5.7,19.0,17.6,49.7,2.0
+278,Astana - Kazakhstan,7.1,9.8,9.0,10.2,11.1,121.4,0.8
+279,San Diego - United States,7.1,7.6,8.1,13.1,12.3,62.7,1.6
+280,Cardiff - United Kingdom,7.1,5.4,6.5,18.7,15.3,58.6,1.7
+281,San Francisco - United States,7.1,6.6,6.3,15.1,15.9,62.2,1.6
+282,Leuven - Belgium,7.0,4.3,5.9,23.3,17.1,50.0,2.0
+283,Bremen - Germany,7.0,4.0,3.3,24.9,29.9,50.7,2.0
+284,Dubai - United Arab Emirates,7.0,7.3,8.7,13.6,11.5,52.6,1.9
+285,Eindhoven - Netherlands,7.0,5.1,5.5,19.4,18.0,50.1,2.0
+286,Bonn - Germany,6.9,3.9,4.3,25.8,23.1,50.2,2.0
+287,Alicante - Spain,6.9,5.2,9.4,19.4,10.7,47.1,2.1
+288,Abu Dhabi - United Arab Emirates,6.8,7.6,8.1,13.1,12.4,55.5,1.8
+289,Gothenburg - Sweden,6.8,3.5,4.4,28.9,22.8,48.0,2.1
+290,Izmir - Turkey,6.8,9.3,9.4,10.8,10.6,276.6,0.4
+291,Bergamo - Italy,6.8,5.2,5.2,19.2,19.4,46.4,2.2
+292,Kiel - Germany,6.7,3.2,4.6,31.7,21.5,48.8,2.0
+293,Oakland - United States,6.6,6.6,6.8,15.2,14.7,58.2,1.7
+294,Trondheim - Norway,6.6,4.8,4.7,20.9,21.3,53.2,1.9
+295,Noida - India,6.6,3.5,5.0,28.6,20.1,71.7,1.4
+296,Gent - Belgium,6.5,4.3,6.2,23.4,16.1,45.0,2.2
+297,Rotterdam - Netherlands,6.5,6.2,7.0,16.2,14.2,46.7,2.1
+298,Kelowna - Canada,6.4,6.6,7.6,15.1,13.2,53.6,1.9
+299,Perth - Australia,6.4,6.0,6.2,16.5,16.0,56.3,1.8
+300,Aachen - Germany,6.3,4.0,3.7,25.0,27.3,46.0,2.2
+301,Leipzig - Germany,6.3,3.6,5.3,27.8,18.7,45.7,2.2
+302,Miami - United States,6.3,9.7,12.1,10.3,8.3,56.2,1.8
+303,Stavanger - Norway,6.2,5.9,5.3,17.0,18.7,48.8,2.0
+304,Vadodara - India,6.2,4.6,4.4,21.8,22.9,67.0,1.5
+305,Genoa - Italy,6.2,5.1,10.4,19.5,9.6,42.5,2.4
+306,Doha - Qatar,6.1,8.7,9.7,11.5,10.4,53.6,1.9
+307,Dresden - Germany,6.1,3.6,4.5,27.5,22.3,44.4,2.3
+308,Mannheim - Germany,6.1,3.3,3.6,30.7,27.8,42.3,2.4
+309,Antwerp - Belgium,6.1,4.9,5.9,20.4,16.9,40.5,2.5
+310,London (Ontario) - Canada,6.1,7.6,6.2,13.2,16.2,49.7,2.0
+311,Lille - France,6.1,4.3,5.0,23.3,20.1,43.8,2.3
+312,The Hague - Netherlands,6.0,6.1,6.8,16.4,14.8,41.2,2.4
+313,Leeds - United Kingdom,6.0,7.7,5.7,13.0,17.5,47.6,2.1
+314,Brussels - Belgium,6.0,5.6,6.6,17.8,15.1,41.0,2.4
+315,Malmo - Sweden,6.0,5.2,5.3,19.4,18.7,43.6,2.3
+316,Cork - Ireland,5.9,7.7,9.5,12.9,10.6,43.7,2.3
+317,Essen - Germany,5.9,3.2,3.9,31.1,25.5,42.9,2.3
+318,Muscat - Oman,5.9,5.5,5.8,18.2,17.2,47.2,2.1
+319,Grenoble - France,5.8,4.6,4.6,22.0,21.6,42.1,2.4
+320,Boise - United States,5.8,4.9,9.1,20.3,11.0,51.3,1.9
+321,Calgary - Canada,5.7,7.5,6.7,13.4,15.0,43.8,2.3
+322,Jersey City - United States,5.7,9.5,8.2,10.5,12.2,50.4,2.0
+323,Oviedo - Spain,5.6,5.3,7.1,18.8,14.1,38.5,2.6
+324,Dallas - United States,5.5,5.3,10.9,18.8,9.2,48.8,2.0
+325,Belfast - United Kingdom,5.5,6.6,7.9,15.2,12.6,44.0,2.3
+326,Halifax - Canada,5.4,9.5,9.2,10.5,10.9,44.2,2.3
+327,Manama - Bahrain,5.4,7.9,6.5,12.6,15.4,51.0,2.0
+328,Glasgow - United Kingdom,5.3,7.5,7.1,13.4,14.1,41.1,2.4
+329,Saskatoon - Canada,5.3,7.7,6.6,13.0,15.1,43.9,2.3
+330,Fort Lauderdale - United States,5.2,10.6,10.4,9.4,9.6,46.0,2.2
+331,Cape Town - South Africa,5.2,9.6,9.9,10.4,10.1,66.4,1.5
+332,Stara Zagora - Bulgaria,5.2,4.5,5.1,22.1,19.7,34.3,2.9
+333,Nashville - United States,5.1,7.7,11.6,13.0,8.6,44.9,2.2
+334,Austin - United States,5.1,7.0,10.2,14.4,9.8,45.3,2.2
+335,Liverpool - United Kingdom,5.1,7.0,6.4,14.2,15.6,40.7,2.5
+336,Riyadh - Saudi Arabia,5.1,8.7,8.5,11.5,11.7,41.3,2.4
+337,Ottawa - Canada,5.1,7.0,6.6,14.2,15.2,38.2,2.6
+338,Knoxville - United States,5.0,8.6,11.3,11.7,8.9,43.7,2.3
+339,Hamilton - Canada,4.9,9.8,9.2,10.2,10.8,40.8,2.5
+340,Washington DC - United States,4.8,7.1,13.0,14.2,7.7,42.5,2.4
+341,Las Vegas - United States,4.7,7.0,10.6,14.3,9.4,42.2,2.4
+342,Aalborg - Denmark,4.7,4.9,4.7,20.6,21.4,36.3,2.8
+343,Hyderabad - India,4.7,4.3,4.3,23.3,23.4,52.1,1.9
+344,Sacramento - United States,4.7,8.7,9.3,11.5,10.7,41.9,2.4
+345,Seattle - United States,4.7,7.3,8.2,13.6,12.2,41.8,2.4
+346,Phoenix - United States,4.7,7.8,9.1,12.8,11.0,41.5,2.4
+347,Charleston - United States,4.6,10.7,12.4,9.3,8.1,40.6,2.5
+348,Ajman - United Arab Emirates,4.5,21.4,24.9,4.7,4.0,34.1,2.9
+349,Denver - United States,4.5,8.3,9.8,12.0,10.2,39.8,2.5
+350,Winnipeg - Canada,4.4,8.5,8.5,11.7,11.7,35.6,2.8
+351,Boulder - United States,4.2,11.3,8.7,8.8,11.5,37.2,2.7
+352,Salt Lake City - United States,4.2,8.7,9.9,11.4,10.1,36.9,2.7
+353,Catania - Italy,4.1,7.0,7.3,14.3,13.7,28.9,3.5
+354,Regina - Canada,3.9,9.7,8.5,10.3,11.8,32.6,3.1
+355,Tampa - United States,3.9,10.0,14.8,10.0,6.8,34.7,2.9
+356,Tucson - United States,3.9,8.5,9.2,11.8,10.9,34.6,2.9
+357,San Antonio - United States,3.9,7.3,12.8,13.7,7.8,33.9,2.9
+358,Edmonton - Canada,3.9,10.7,9.3,9.3,10.8,31.0,3.2
+359,Charlotte - United States,3.8,10.2,12.0,9.8,8.4,33.7,3.0
+360,New Orleans - United States,3.8,9.5,14.9,10.5,6.7,33.7,3.0
+361,Madison - United States,3.8,9.2,12.3,10.9,8.1,33.2,3.0
+362,Ann Arbor - United States,3.7,9.4,11.9,10.6,8.4,33.0,3.0
+363,Portland - United States,3.7,11.1,10.3,9.0,9.7,32.8,3.0
+364,Arlington - United States,3.6,10.5,10.1,9.5,9.9,32.3,3.1
+365,Raleigh - United States,3.5,9.8,12.6,10.2,7.9,31.2,3.2
+366,Cincinnati - United States,3.4,10.7,11.2,9.4,8.9,30.2,3.3
+367,Philadelphia - United States,3.4,10.8,13.9,9.2,7.2,30.2,3.3
+368,Orlando - United States,3.3,12.6,12.0,7.9,8.3,29.5,3.4
+369,Columbus - United States,3.3,9.8,13.0,10.2,7.7,29.2,3.4
+370,Buffalo - United States,3.3,11.0,12.5,9.1,8.0,29.0,3.4
+371,Anchorage - United States,3.3,9.7,9.8,10.3,10.2,28.8,3.5
+372,Jeddah - Saudi Arabia,3.3,7.5,9.2,13.3,10.8,26.1,3.8
+373,Spokane - United States,3.2,12.0,11.6,8.3,8.6,28.3,3.5
+374,Durban - South Africa,3.2,10.4,11.9,9.6,8.4,40.9,2.4
+375,Fort Worth - United States,3.2,9.8,13.9,10.2,7.2,28.0,3.6
+376,Jacksonville - United States,3.1,12.4,11.1,8.1,9.0,27.5,3.6
+377,Albuquerque - United States,3.1,11.2,10.7,8.9,9.3,26.9,3.7
+378,Atlanta - United States,3.1,11.0,12.3,9.1,8.2,27.0,3.7
+379,Minneapolis - United States,3.0,11.1,12.0,9.0,8.4,26.6,3.8
+380,Chicago - United States,2.9,14.2,13.7,7.1,7.3,25.6,3.9
+381,Baltimore - United States,2.8,15.2,11.2,6.6,9.0,24.9,4.0
+382,Oklahoma City - United States,2.8,10.8,11.4,9.3,8.8,24.6,4.1
+383,Pittsburgh - United States,2.8,12.4,12.4,8.0,8.1,24.5,4.1
+384,Johannesburg - South Africa,2.7,11.6,12.3,8.6,8.1,34.6,2.9
+385,Kansas City - United States,2.7,12.7,10.6,7.9,9.4,24.1,4.1
+386,Milwaukee - United States,2.7,14.2,14.0,7.1,7.2,24.0,4.2
+387,Virginia Beach - United States,2.7,16.4,12.8,6.1,7.8,23.9,4.2
+388,Tulsa - United States,2.6,13.2,11.1,7.6,9.0,22.9,4.4
+389,Pretoria - South Africa,2.6,12.6,14.3,7.9,7.0,33.4,3.0
+390,Indianapolis - United States,2.6,14.4,14.5,7.0,6.9,22.6,4.4
+391,Houston - United States,2.5,14.9,15.0,6.7,6.7,22.0,4.5
+392,Ad Dammam - Saudi Arabia,2.4,11.9,9.5,8.4,10.6,20.8,4.8
+393,Huntsville - United States,2.4,14.3,11.4,7.0,8.7,21.2,4.7
+394,Cleveland - United States,2.3,22.7,15.6,4.4,6.4,20.1,5.0
+395,Saint Louis - United States,2.0,17.9,11.8,5.6,8.4,17.2,5.8
