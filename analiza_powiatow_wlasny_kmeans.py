@@ -7,7 +7,7 @@ import seaborn as sns
 from sklearn.preprocessing import StandardScaler
 
 # ==============================================================================
-# TWOJE AUTORSKIE FUNKCJE K-MEANS (Czysty Python)
+# K-MEANS (Czysty Python)
 # ==============================================================================
 def dist(p, q):
     return sum((pp - qq) ** 2 for pp, qq in zip(p, q))
@@ -120,21 +120,20 @@ df_powiaty_nodup = df_powiaty.drop_duplicates(subset=['Nazwa_czysta'])
 dane_tekstowe_dict = df_powiaty_nodup.set_index('Nazwa_czysta').to_dict(orient='index')
 
 # ==============================================================================
-# 3. GENEROWANIE KOMPLETNEGO WYKRESU AKADEMICKIEGO Z CENTROIDAMI
+# 3. GENEROWANIE WYKRESU
 # ==============================================================================
 print("Generowanie czystego wykresu rozrzutu...")
 centroidy_realne = scaler.inverse_transform(centroidy_scaled)
 
 plt.figure(figsize=(11, 7))
 
-# Słownik kolorów - teraz klucze idealnie pokrywają się z mapowaniem!
 paleta_kolorow = {
     "Metropolitalne Centra Obrotu": "#e41a1c",           # Czerwony
     "Rynki Rozwijające się": "#377eb8",                  # Niebieski
     "Rynki Kameralne (Niska płynność)": "#4daf4a"         # Zielony
 }
 
-# Rysujemy powiaty (używamy skali logarytmicznej na osi X, aby wykres był niesamowicie czytelny)
+# Rysujemy powiaty (używamy skali logarytmicznej na osi X, aby wykres był czytelny)
 sns.scatterplot(
     data=df_powiaty,
     x='liczba_transakcji',
@@ -148,7 +147,7 @@ sns.scatterplot(
 )
 plt.xscale('log') # Logarytmiczna skala osi płynności rynkowej
 
-# Nanosimy centroidy (środki klastrów)
+# Nanosimy centroidy
 # Ponieważ model uczył się na logarytmie transakcji, pierwszą współrzędną centroidu musimy odlogarytmować (np.expm1)
 centroids_log_x = centroidy_realne[:, 0]
 centroids_real_x = np.expm1(centroids_log_x)
@@ -166,7 +165,6 @@ plt.scatter(
     zorder=4
 )
 
-# Podpisywanie liderów rynku na wykresie dla celów prezentacyjnych
 top_powiaty = df_powiaty.sort_values('liczba_transakcji', ascending=False).head(6)
 for _, row in top_powiaty.iterrows():
     plt.text(
@@ -251,7 +249,6 @@ def stylizuj_powiat(feature):
         'fillOpacity': opacity
     }
 
-# Aktualizacja nazw i pól w dymku informacyjnym
 folium.GeoJson(
     geojson_powiaty,
     style_function=stylizuj_powiat,
@@ -263,7 +260,6 @@ folium.GeoJson(
     )
 ).add_to(mapa)
 
-# Legenda HTML
 legenda_html = """
      <div style="position: fixed; 
      bottom: 40px; left: 40px; width: 270px; height: 120px; 
