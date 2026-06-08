@@ -1,5 +1,10 @@
 # Segmentacja Rynku Nieruchomości w Polsce (Algorytm K-means)
 
+## Zespół
+- Andżelika Gawinkowska
+- Jakub Jankowski
+- Maciej Janczara
+
 ## Cel
 Celem projektu jest weryfikacja dostępności mieszkań w Polsce poprzez zderzenie danych o transakcjach z realnymi zarobkami mieszkańców. Projekt dzieli się na dwie skale analizy:
 - Analiza miast: Segmentacja 14 największych metropolii przy użyciu biblioteki scikit-learn.
