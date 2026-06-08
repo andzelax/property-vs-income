@@ -8,13 +8,13 @@ import folium
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 
-OUTPUT_DIR = 'result_figures'
+OUTPUT_DIR = '../result_figures'
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 # ==========================================
 # 1. WCZYTYWANIE I CZYSZCZENIE
 # ==========================================
 print("Wczytywanie danych...")
-sale_files = sorted(glob.glob("data/apartment-prices-in-poland/apartments_pl_*.csv"))
+sale_files = sorted(glob.glob("../data/apartment-prices-in-poland/apartments_pl_*.csv"))
 sale_files = [f for f in sale_files if "rent" not in f]
 
 dfs = []
@@ -59,7 +59,7 @@ print(f"Dane po usunięciu duplikatów i outlierów: {len(df_clean):,} wierszy")
 # ==========================================
 # 3. POŁĄCZENIE Z DANYMI GUS O ZAROBKACH
 # ==========================================
-df_earnings = pd.read_csv('data/gus/WYNA_2497_CTAB_20260531120135.csv', delimiter=';')
+df_earnings = pd.read_csv('../data/gus/WYNA_2497_CTAB_20260531120135.csv', delimiter=';')
 
 df_earnings['salary_gross'] = (df_earnings['ogółem;2024;[zł]']
                                .str.replace(r'\s+', '', regex=True)

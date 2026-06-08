@@ -6,7 +6,7 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import StandardScaler
-OUTPUT_DIR = 'result_figures'
+OUTPUT_DIR = '../result_figures'
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 # ==============================================================================
 # K-MEANS (Czysty Python)
@@ -54,9 +54,9 @@ def czysc_nazwe(tekst):
 # 1. PRZETWARZANIE DANYCH GUS (Transakcje, Metraże, Wynagrodzenia)
 # ==============================================================================
 print("Integracja baz danych GUS dla powiatów...")
-df_lokale = pd.read_csv('data/gus/RYNE_3783_CTAB_20260606230330.csv', delimiter=';')
-df_powierzchnia = pd.read_csv('data/gus/RYNE_3785_CTAB_20260606230435.csv', delimiter=';')
-df_wynagrodzenia = pd.read_csv('data/gus/WYNA_2497_CTAB_20260531120135.csv', delimiter=';')
+df_lokale = pd.read_csv('../data/gus/RYNE_3783_CTAB_20260606230330.csv', delimiter=';')
+df_powierzchnia = pd.read_csv('../data/gus/RYNE_3785_CTAB_20260606230435.csv', delimiter=';')
+df_wynagrodzenia = pd.read_csv('../data/gus/WYNA_2497_CTAB_20260531120135.csv', delimiter=';')
 
 df_lokale = df_lokale[(df_lokale['Kod'] != 0) & (~df_lokale['Nazwa'].str.isupper())].copy()
 df_powierzchnia = df_powierzchnia[(df_powierzchnia['Kod'] != 0) & (~df_powierzchnia['Nazwa'].str.isupper())].copy()
@@ -192,7 +192,7 @@ print("\n-> Sukces! Wygenerowano bezbłędny wykres powiatowy: wlasny_kmeans_pow
 # ==========================================
 print("Generowanie interaktywnej mapy Folium...")
 
-with open('data/geo/powiaty-medium.geojson', 'r', encoding='utf-8') as f:
+with open('../data/geo/powiaty-medium.geojson', 'r', encoding='utf-8') as f:
     geojson_powiaty = json.load(f)
 
 for feature in geojson_powiaty['features']:
