@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_35839d01e84402cedf688ebd6da9d714 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+     <div style="position: fixed; 
+     bottom: 50px; left: 50px; width: 260px; height: 110px; 
+     border:2px solid grey; z-index:9999; font-size:12px;
+     background-color:white; opacity: 0.9; padding: 10px;
+     font-family: Arial, sans-serif; border-radius: 5px;">
+     <b>Profile rynków (K-means):</b><br>
+     <i class="fa fa-circle fa-1x" style="color:red"></i> Metropolie Kryzysu (Niedostępne)<br>
+     <i class="fa fa-circle fa-1x" style="color:blue"></i> Rynki Rozwojowe<br>
+     <i class="fa fa-circle fa-1x" style="color:green"></i> Oazy Dostępności i Rynki Lokalne
+     </div>
+     
+    
+            <div class="folium-map" id="map_35839d01e84402cedf688ebd6da9d714" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_35839d01e84402cedf688ebd6da9d714 = L.map(
+                "map_35839d01e84402cedf688ebd6da9d714",
+                {
+                    center: [52.0, 19.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_10d2b2634c138eec5d2adf4e4b9ae603 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_10d2b2634c138eec5d2adf4e4b9ae603.addTo(map_35839d01e84402cedf688ebd6da9d714);
+        
+    
+            var circle_marker_e111d08845d0ccd2dc280a28a6bd5a78 = L.circleMarker(
+                [53.13449259214272, 23.14440968479648],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.083333333333332, "stroke": true, "weight": 2}
+            ).addTo(map_35839d01e84402cedf688ebd6da9d714);
+        
+    
+        var popup_509dfa7befca44bd50a646a0f9eaef4a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_49309c039702a3bf8c5b4efb51aed580 = $(`<div id="html_49309c039702a3bf8c5b4efb51aed580" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 220px; font-size: 13px;">         <h3 style="margin-bottom: 5px; color: blue; text-transform: uppercase;">             Bialystok         </h3>         <strong style="color: #555;">Profil:</strong> Rynki Rozwojowe<br>         <hr style="border: 0; border-top: 1px solid #ccc; margin: 8px 0;">         <table style="width: 100%; border-collapse: collapse;">             <tr>                 <td style="padding: 3px 0; color: #666;">Mediana ceny:</td>                 <td style="text-align: right; font-weight: bold;">9042 zł/m²</td>             </tr>             <tr>                 <td style="padding: 3px 0; color: #666;">Wskaźnik:</td>                 <td style="text-align: right; font-weight: bold; color: blue;">1.52 pensji</td>             </tr>         </table>     </div>     </div>`)[0];
+                popup_509dfa7befca44bd50a646a0f9eaef4a.setContent(html_49309c039702a3bf8c5b4efb51aed580);
+            
+        
+
+        circle_marker_e111d08845d0ccd2dc280a28a6bd5a78.bindPopup(popup_509dfa7befca44bd50a646a0f9eaef4a)
+        ;
+
+        
+    
+    
+            var circle_marker_f869617b7bcb86797cd24685b1eb9965 = L.circleMarker(
+                [53.121809701841975, 18.011246331192726],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.167548500881834, "stroke": true, "weight": 2}
+            ).addTo(map_35839d01e84402cedf688ebd6da9d714);
+        
+    
+        var popup_e6633bbe9a2b04aab4f497af8b406dcc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_98c0d567847fac02bd46e08918a9441d = $(`<div id="html_98c0d567847fac02bd46e08918a9441d" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 220px; font-size: 13px;">         <h3 style="margin-bottom: 5px; color: green; text-transform: uppercase;">             Bydgoszcz         </h3>         <strong style="color: #555;">Profil:</strong> Oazy Dostępności i Rynki Lokalne<br>         <hr style="border: 0; border-top: 1px solid #ccc; margin: 8px 0;">         <table style="width: 100%; border-collapse: collapse;">             <tr>                 <td style="padding: 3px 0; color: #666;">Mediana ceny:</td>                 <td style="text-align: right; font-weight: bold;">7584 zł/m²</td>             </tr>             <tr>                 <td style="padding: 3px 0; color: #666;">Wskaźnik:</td>                 <td style="text-align: right; font-weight: bold; color: green;">1.25 pensji</td>             </tr>         </table>     </div>     </div>`)[0];
+                popup_e6633bbe9a2b04aab4f497af8b406dcc.setContent(html_98c0d567847fac02bd46e08918a9441d);
+            
+        
+
+        circle_marker_f869617b7bcb86797cd24685b1eb9965.bindPopup(popup_e6633bbe9a2b04aab4f497af8b406dcc)
+        ;
+
+        
+    
+    
+            var circle_marker_1d550e8541069356df11bfff2eb1f2a6 = L.circleMarker(
+                [50.81006480602105, 19.124291682610092],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.713493658604198, "stroke": true, "weight": 2}
+            ).addTo(map_35839d01e84402cedf688ebd6da9d714);
+        
+    
+        var popup_8dee6e63593a2623da8dc7337ba175fe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cc62e7f52efe76cf30a660e4b78dea93 = $(`<div id="html_cc62e7f52efe76cf30a660e4b78dea93" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 220px; font-size: 13px;">         <h3 style="margin-bottom: 5px; color: green; text-transform: uppercase;">             Czestochowa         </h3>         <strong style="color: #555;">Profil:</strong> Oazy Dostępności i Rynki Lokalne<br>         <hr style="border: 0; border-top: 1px solid #ccc; margin: 8px 0;">         <table style="width: 100%; border-collapse: collapse;">             <tr>                 <td style="padding: 3px 0; color: #666;">Mediana ceny:</td>                 <td style="text-align: right; font-weight: bold;">6357 zł/m²</td>             </tr>             <tr>                 <td style="padding: 3px 0; color: #666;">Wskaźnik:</td>                 <td style="text-align: right; font-weight: bold; color: green;">1.13 pensji</td>             </tr>         </table>     </div>     </div>`)[0];
+                popup_8dee6e63593a2623da8dc7337ba175fe.setContent(html_cc62e7f52efe76cf30a660e4b78dea93);
+            
+        
+
+        circle_marker_1d550e8541069356df11bfff2eb1f2a6.bindPopup(popup_8dee6e63593a2623da8dc7337ba175fe)
+        ;
+
+        
+    
+    
+            var circle_marker_e89b1749b387d677e5cb130fedbf26c3 = L.circleMarker(
+                [54.36201153627819, 18.606551792459346],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.459246051961284, "stroke": true, "weight": 2}
+            ).addTo(map_35839d01e84402cedf688ebd6da9d714);
+        
+    
+        var popup_fa8dd131eabe129e4a62191a7d1b0ea0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0f14f0de7609c789ea002145fdb958b2 = $(`<div id="html_0f14f0de7609c789ea002145fdb958b2" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 220px; font-size: 13px;">         <h3 style="margin-bottom: 5px; color: red; text-transform: uppercase;">             Gdansk         </h3>         <strong style="color: #555;">Profil:</strong> Metropolie Kryzysu (Niedostępne)<br>         <hr style="border: 0; border-top: 1px solid #ccc; margin: 8px 0;">         <table style="width: 100%; border-collapse: collapse;">             <tr>                 <td style="padding: 3px 0; color: #666;">Mediana ceny:</td>                 <td style="text-align: right; font-weight: bold;">13230 zł/m²</td>             </tr>             <tr>                 <td style="padding: 3px 0; color: #666;">Wskaźnik:</td>                 <td style="text-align: right; font-weight: bold; color: red;">1.82 pensji</td>             </tr>         </table>     </div>     </div>`)[0];
+                popup_fa8dd131eabe129e4a62191a7d1b0ea0.setContent(html_0f14f0de7609c789ea002145fdb958b2);
+            
+        
+
+        circle_marker_e89b1749b387d677e5cb130fedbf26c3.bindPopup(popup_fa8dd131eabe129e4a62191a7d1b0ea0)
+        ;
+
+        
+    
+    
+            var circle_marker_d22fca2320ec98a3ae132d4506c24e29 = L.circleMarker(
+                [54.51225452438452, 18.50172842040168],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.365853658536583, "stroke": true, "weight": 2}
+            ).addTo(map_35839d01e84402cedf688ebd6da9d714);
+        
+    
+        var popup_b28343d874a4e5ca2314fc7b20080c65 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ca838d35f89739ee5aab52aee4108c61 = $(`<div id="html_ca838d35f89739ee5aab52aee4108c61" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 220px; font-size: 13px;">         <h3 style="margin-bottom: 5px; color: red; text-transform: uppercase;">             Gdynia         </h3>         <strong style="color: #555;">Profil:</strong> Metropolie Kryzysu (Niedostępne)<br>         <hr style="border: 0; border-top: 1px solid #ccc; margin: 8px 0;">         <table style="width: 100%; border-collapse: collapse;">             <tr>                 <td style="padding: 3px 0; color: #666;">Mediana ceny:</td>                 <td style="text-align: right; font-weight: bold;">11683 zł/m²</td>             </tr>             <tr>                 <td style="padding: 3px 0; color: #666;">Wskaźnik:</td>                 <td style="text-align: right; font-weight: bold; color: red;">1.80 pensji</td>             </tr>         </table>     </div>     </div>`)[0];
+                popup_b28343d874a4e5ca2314fc7b20080c65.setContent(html_ca838d35f89739ee5aab52aee4108c61);
+            
+        
+
+        circle_marker_d22fca2320ec98a3ae132d4506c24e29.bindPopup(popup_b28343d874a4e5ca2314fc7b20080c65)
+        ;
+
+        
+    
+    
+            var circle_marker_c8d968c72b4a61642daea74562a6a52d = L.circleMarker(
+                [50.25221252659891, 19.011400968578755],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.88785046728972, "stroke": true, "weight": 2}
+            ).addTo(map_35839d01e84402cedf688ebd6da9d714);
+        
+    
+        var popup_b5fc791e0d8aba188cbd31b56eef1ae1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_df1f924f33511a7d5a449148825a7515 = $(`<div id="html_df1f924f33511a7d5a449148825a7515" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 220px; font-size: 13px;">         <h3 style="margin-bottom: 5px; color: green; text-transform: uppercase;">             Katowice         </h3>         <strong style="color: #555;">Profil:</strong> Oazy Dostępności i Rynki Lokalne<br>         <hr style="border: 0; border-top: 1px solid #ccc; margin: 8px 0;">         <table style="width: 100%; border-collapse: collapse;">             <tr>                 <td style="padding: 3px 0; color: #666;">Mediana ceny:</td>                 <td style="text-align: right; font-weight: bold;">7944 zł/m²</td>             </tr>             <tr>                 <td style="padding: 3px 0; color: #666;">Wskaźnik:</td>                 <td style="text-align: right; font-weight: bold; color: green;">1.10 pensji</td>             </tr>         </table>     </div>     </div>`)[0];
+                popup_b5fc791e0d8aba188cbd31b56eef1ae1.setContent(html_df1f924f33511a7d5a449148825a7515);
+            
+        
+
+        circle_marker_c8d968c72b4a61642daea74562a6a52d.bindPopup(popup_b5fc791e0d8aba188cbd31b56eef1ae1)
+        ;
+
+        
+    
+    
+            var circle_marker_f981675df6495e3f1e3c124d1899878d = L.circleMarker(
+                [50.059393921086766, 19.956618506031514],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.0, "stroke": true, "weight": 2}
+            ).addTo(map_35839d01e84402cedf688ebd6da9d714);
+        
+    
+        var popup_5b8754b7e4f0aab500146e23dcba1ec5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fd13af9a6d6d8227a133888fd57495b7 = $(`<div id="html_fd13af9a6d6d8227a133888fd57495b7" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 220px; font-size: 13px;">         <h3 style="margin-bottom: 5px; color: red; text-transform: uppercase;">             Krakow         </h3>         <strong style="color: #555;">Profil:</strong> Metropolie Kryzysu (Niedostępne)<br>         <hr style="border: 0; border-top: 1px solid #ccc; margin: 8px 0;">         <table style="width: 100%; border-collapse: collapse;">             <tr>                 <td style="padding: 3px 0; color: #666;">Mediana ceny:</td>                 <td style="text-align: right; font-weight: bold;">15000 zł/m²</td>             </tr>             <tr>                 <td style="padding: 3px 0; color: #666;">Wskaźnik:</td>                 <td style="text-align: right; font-weight: bold; color: red;">1.99 pensji</td>             </tr>         </table>     </div>     </div>`)[0];
+                popup_5b8754b7e4f0aab500146e23dcba1ec5.setContent(html_fd13af9a6d6d8227a133888fd57495b7);
+            
+        
+
+        circle_marker_f981675df6495e3f1e3c124d1899878d.bindPopup(popup_5b8754b7e4f0aab500146e23dcba1ec5)
+        ;
+
+        
+    
+    
+            var circle_marker_2f4369c4c93c88a56d52ed7c37e257ad = L.circleMarker(
+                [51.765492891925305, 19.455735338633726],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.955056179775282, "stroke": true, "weight": 2}
+            ).addTo(map_35839d01e84402cedf688ebd6da9d714);
+        
+    
+        var popup_f47c4312d8752756e74f6cda57cc0b69 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0fbd3cee8df8700739b8d0d10ce35de8 = $(`<div id="html_0fbd3cee8df8700739b8d0d10ce35de8" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 220px; font-size: 13px;">         <h3 style="margin-bottom: 5px; color: green; text-transform: uppercase;">             Lodz         </h3>         <strong style="color: #555;">Profil:</strong> Oazy Dostępności i Rynki Lokalne<br>         <hr style="border: 0; border-top: 1px solid #ccc; margin: 8px 0;">         <table style="width: 100%; border-collapse: collapse;">             <tr>                 <td style="padding: 3px 0; color: #666;">Mediana ceny:</td>                 <td style="text-align: right; font-weight: bold;">7978 zł/m²</td>             </tr>             <tr>                 <td style="padding: 3px 0; color: #666;">Wskaźnik:</td>                 <td style="text-align: right; font-weight: bold; color: green;">1.29 pensji</td>             </tr>         </table>     </div>     </div>`)[0];
+                popup_f47c4312d8752756e74f6cda57cc0b69.setContent(html_0fbd3cee8df8700739b8d0d10ce35de8);
+            
+        
+
+        circle_marker_2f4369c4c93c88a56d52ed7c37e257ad.bindPopup(popup_f47c4312d8752756e74f6cda57cc0b69)
+        ;
+
+        
+    
+    
+            var circle_marker_bb42411d22c4f41194d6b69f242b023f = L.circleMarker(
+                [51.24290455059832, 22.54746377707847],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.41025641025641, "stroke": true, "weight": 2}
+            ).addTo(map_35839d01e84402cedf688ebd6da9d714);
+        
+    
+        var popup_b37d979119b396fea153baeaf874aff4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1ae8348731b54d93128376ac907ed809 = $(`<div id="html_1ae8348731b54d93128376ac907ed809" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 220px; font-size: 13px;">         <h3 style="margin-bottom: 5px; color: blue; text-transform: uppercase;">             Lublin         </h3>         <strong style="color: #555;">Profil:</strong> Rynki Rozwojowe<br>         <hr style="border: 0; border-top: 1px solid #ccc; margin: 8px 0;">         <table style="width: 100%; border-collapse: collapse;">             <tr>                 <td style="padding: 3px 0; color: #666;">Mediana ceny:</td>                 <td style="text-align: right; font-weight: bold;">9205 zł/m²</td>             </tr>             <tr>                 <td style="padding: 3px 0; color: #666;">Wskaźnik:</td>                 <td style="text-align: right; font-weight: bold; color: blue;">1.50 pensji</td>             </tr>         </table>     </div>     </div>`)[0];
+                popup_b37d979119b396fea153baeaf874aff4.setContent(html_1ae8348731b54d93128376ac907ed809);
+            
+        
+
+        circle_marker_bb42411d22c4f41194d6b69f242b023f.bindPopup(popup_b37d979119b396fea153baeaf874aff4)
+        ;
+
+        
+    
+    
+            var circle_marker_573ee9721a0208a184d52fc700cb76cf = L.circleMarker(
+                [52.41057358479122, 16.91973122287973],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.235521235521237, "stroke": true, "weight": 2}
+            ).addTo(map_35839d01e84402cedf688ebd6da9d714);
+        
+    
+        var popup_cff3657f0871a757bc2af5312f89f341 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a4eb50b4d2dd6914425eafefc10e5be8 = $(`<div id="html_a4eb50b4d2dd6914425eafefc10e5be8" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 220px; font-size: 13px;">         <h3 style="margin-bottom: 5px; color: blue; text-transform: uppercase;">             Poznan         </h3>         <strong style="color: #555;">Profil:</strong> Rynki Rozwojowe<br>         <hr style="border: 0; border-top: 1px solid #ccc; margin: 8px 0;">         <table style="width: 100%; border-collapse: collapse;">             <tr>                 <td style="padding: 3px 0; color: #666;">Mediana ceny:</td>                 <td style="text-align: right; font-weight: bold;">10618 zł/m²</td>             </tr>             <tr>                 <td style="padding: 3px 0; color: #666;">Wskaźnik:</td>                 <td style="text-align: right; font-weight: bold; color: blue;">1.55 pensji</td>             </tr>         </table>     </div>     </div>`)[0];
+                popup_cff3657f0871a757bc2af5312f89f341.setContent(html_a4eb50b4d2dd6914425eafefc10e5be8);
+            
+        
+
+        circle_marker_573ee9721a0208a184d52fc700cb76cf.bindPopup(popup_cff3657f0871a757bc2af5312f89f341)
+        ;
+
+        
+    
+    
+            var circle_marker_6775b8fb2444a1baa06abefd8a7f11ce = L.circleMarker(
+                [51.40114781573273, 21.15623433548229],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.647554806070826, "stroke": true, "weight": 2}
+            ).addTo(map_35839d01e84402cedf688ebd6da9d714);
+        
+    
+        var popup_7b46bbe31b3fa27855fb94e630c18e9a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c81293ba2d14a5ff575dbc4c34e46e5a = $(`<div id="html_c81293ba2d14a5ff575dbc4c34e46e5a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 220px; font-size: 13px;">         <h3 style="margin-bottom: 5px; color: green; text-transform: uppercase;">             Radom         </h3>         <strong style="color: #555;">Profil:</strong> Oazy Dostępności i Rynki Lokalne<br>         <hr style="border: 0; border-top: 1px solid #ccc; margin: 8px 0;">         <table style="width: 100%; border-collapse: collapse;">             <tr>                 <td style="padding: 3px 0; color: #666;">Mediana ceny:</td>                 <td style="text-align: right; font-weight: bold;">6324 zł/m²</td>             </tr>             <tr>                 <td style="padding: 3px 0; color: #666;">Wskaźnik:</td>                 <td style="text-align: right; font-weight: bold; color: green;">1.06 pensji</td>             </tr>         </table>     </div>     </div>`)[0];
+                popup_7b46bbe31b3fa27855fb94e630c18e9a.setContent(html_c81293ba2d14a5ff575dbc4c34e46e5a);
+            
+        
+
+        circle_marker_6775b8fb2444a1baa06abefd8a7f11ce.bindPopup(popup_7b46bbe31b3fa27855fb94e630c18e9a)
+        ;
+
+        
+    
+    
+            var circle_marker_fe48d3b3715b3d2419f9d0b0677aa7ce = L.circleMarker(
+                [50.03468666404655, 21.998866050446257],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.950483091787444, "stroke": true, "weight": 2}
+            ).addTo(map_35839d01e84402cedf688ebd6da9d714);
+        
+    
+        var popup_e9ae1a8bf1eb286ea8bb0cb5b78d8ef1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f5cc2dccac352f5bbd5c624c58a644ef = $(`<div id="html_f5cc2dccac352f5bbd5c624c58a644ef" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 220px; font-size: 13px;">         <h3 style="margin-bottom: 5px; color: blue; text-transform: uppercase;">             Rzeszow         </h3>         <strong style="color: #555;">Profil:</strong> Rynki Rozwojowe<br>         <hr style="border: 0; border-top: 1px solid #ccc; margin: 8px 0;">         <table style="width: 100%; border-collapse: collapse;">             <tr>                 <td style="padding: 3px 0; color: #666;">Mediana ceny:</td>                 <td style="text-align: right; font-weight: bold;">9975 zł/m²</td>             </tr>             <tr>                 <td style="padding: 3px 0; color: #666;">Wskaźnik:</td>                 <td style="text-align: right; font-weight: bold; color: blue;">1.60 pensji</td>             </tr>         </table>     </div>     </div>`)[0];
+                popup_e9ae1a8bf1eb286ea8bb0cb5b78d8ef1.setContent(html_f5cc2dccac352f5bbd5c624c58a644ef);
+            
+        
+
+        circle_marker_fe48d3b3715b3d2419f9d0b0677aa7ce.bindPopup(popup_e9ae1a8bf1eb286ea8bb0cb5b78d8ef1)
+        ;
+
+        
+    
+    
+            var circle_marker_ece985b02af7765934ead8f9419f6d88 = L.circleMarker(
+                [53.43145430695232, 14.551923481526945],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.724867724867725, "stroke": true, "weight": 2}
+            ).addTo(map_35839d01e84402cedf688ebd6da9d714);
+        
+    
+        var popup_452eeca0c17d8cc8fa6841741d8d8a70 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b819d78f50fa177b7c3db8f5c588a8d7 = $(`<div id="html_b819d78f50fa177b7c3db8f5c588a8d7" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 220px; font-size: 13px;">         <h3 style="margin-bottom: 5px; color: blue; text-transform: uppercase;">             Szczecin         </h3>         <strong style="color: #555;">Profil:</strong> Rynki Rozwojowe<br>         <hr style="border: 0; border-top: 1px solid #ccc; margin: 8px 0;">         <table style="width: 100%; border-collapse: collapse;">             <tr>                 <td style="padding: 3px 0; color: #666;">Mediana ceny:</td>                 <td style="text-align: right; font-weight: bold;">8862 zł/m²</td>             </tr>             <tr>                 <td style="padding: 3px 0; color: #666;">Wskaźnik:</td>                 <td style="text-align: right; font-weight: bold; color: blue;">1.36 pensji</td>             </tr>         </table>     </div>     </div>`)[0];
+                popup_452eeca0c17d8cc8fa6841741d8d8a70.setContent(html_b819d78f50fa177b7c3db8f5c588a8d7);
+            
+        
+
+        circle_marker_ece985b02af7765934ead8f9419f6d88.bindPopup(popup_452eeca0c17d8cc8fa6841741d8d8a70)
+        ;
+
+        
+    
+    
+            var circle_marker_0d79d86ffbf12a6a3bce84fc420084eb = L.circleMarker(
+                [52.22897347881221, 21.007531028042678],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 33.531582446808514, "stroke": true, "weight": 2}
+            ).addTo(map_35839d01e84402cedf688ebd6da9d714);
+        
+    
+        var popup_1d7d8ccf063c581b10d03ad9c5b3eb08 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0833bdc95b9d4824ddfef25f3116a275 = $(`<div id="html_0833bdc95b9d4824ddfef25f3116a275" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 220px; font-size: 13px;">         <h3 style="margin-bottom: 5px; color: red; text-transform: uppercase;">             Warszawa         </h3>         <strong style="color: #555;">Profil:</strong> Metropolie Kryzysu (Niedostępne)<br>         <hr style="border: 0; border-top: 1px solid #ccc; margin: 8px 0;">         <table style="width: 100%; border-collapse: collapse;">             <tr>                 <td style="padding: 3px 0; color: #666;">Mediana ceny:</td>                 <td style="text-align: right; font-weight: bold;">16766 zł/m²</td>             </tr>             <tr>                 <td style="padding: 3px 0; color: #666;">Wskaźnik:</td>                 <td style="text-align: right; font-weight: bold; color: red;">2.17 pensji</td>             </tr>         </table>     </div>     </div>`)[0];
+                popup_1d7d8ccf063c581b10d03ad9c5b3eb08.setContent(html_0833bdc95b9d4824ddfef25f3116a275);
+            
+        
+
+        circle_marker_0d79d86ffbf12a6a3bce84fc420084eb.bindPopup(popup_1d7d8ccf063c581b10d03ad9c5b3eb08)
+        ;
+
+        
+    
+    
+            var circle_marker_fdfa5c101157e26d50ff0698b5d2b3b8 = L.circleMarker(
+                [51.107311194057054, 17.0255823177072],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.8, "stroke": true, "weight": 2}
+            ).addTo(map_35839d01e84402cedf688ebd6da9d714);
+        
+    
+        var popup_f5ed46f1dccc38df7f0c3cd4fe96b7d3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0d8fea5cf0ea857dd365a6aee2c5d5ee = $(`<div id="html_0d8fea5cf0ea857dd365a6aee2c5d5ee" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 220px; font-size: 13px;">         <h3 style="margin-bottom: 5px; color: red; text-transform: uppercase;">             Wroclaw         </h3>         <strong style="color: #555;">Profil:</strong> Metropolie Kryzysu (Niedostępne)<br>         <hr style="border: 0; border-top: 1px solid #ccc; margin: 8px 0;">         <table style="width: 100%; border-collapse: collapse;">             <tr>                 <td style="padding: 3px 0; color: #666;">Mediana ceny:</td>                 <td style="text-align: right; font-weight: bold;">12400 zł/m²</td>             </tr>             <tr>                 <td style="padding: 3px 0; color: #666;">Wskaźnik:</td>                 <td style="text-align: right; font-weight: bold; color: red;">1.83 pensji</td>             </tr>         </table>     </div>     </div>`)[0];
+                popup_f5ed46f1dccc38df7f0c3cd4fe96b7d3.setContent(html_0d8fea5cf0ea857dd365a6aee2c5d5ee);
+            
+        
+
+        circle_marker_fdfa5c101157e26d50ff0698b5d2b3b8.bindPopup(popup_f5ed46f1dccc38df7f0c3cd4fe96b7d3)
+        ;
+
+        
+    
+</script>
+</html>

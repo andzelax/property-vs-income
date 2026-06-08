@@ -7,6 +7,9 @@ import geopandas as gpd
 import folium
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
+
+OUTPUT_DIR = 'result_figures'
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 # ==========================================
 # 1. WCZYTYWANIE I CZYSZCZENIE
 # ==========================================
@@ -184,7 +187,7 @@ plt.ylabel('Wskaźnik nieosiągalności (Liczba pensji netto za 1 mkw)', fontsiz
 plt.grid(True, linestyle='--', alpha=0.5, zorder=1)
 plt.legend(title="Segmentacja miast", loc='upper left', fontsize=10)
 plt.tight_layout()
-plt.savefig('kmeans_clusters_scatter.png', bbox_inches='tight', dpi=150)
+plt.savefig(f'{OUTPUT_DIR}/kmeans_clusters_scatter.png', bbox_inches='tight', dpi=150)
 plt.close()
 print("-> Wygenerowano zoptymalizowany wykres rozrzutu: kmeans_clusters_scatter.png")
 
@@ -231,7 +234,7 @@ for x, y, label in zip(gdf_miasta.geometry.x, gdf_miasta.geometry.y, gdf_miasta.
 plt.title('Geograficzny podział rynków mieszkaniowych w Polsce według K-means', fontsize=14)
 plt.axis('off')
 plt.tight_layout()
-plt.savefig('mapa_polska_geopandas.png', bbox_inches='tight')
+plt.savefig(f'{OUTPUT_DIR}/mapa_polska_geopandas.png', bbox_inches='tight')
 plt.close()
 
 # ==========================================
@@ -295,6 +298,6 @@ legenda_html = """
      </div>
      """
 mapa_folium.get_root().html.add_child(folium.Element(legenda_html))
-mapa_folium.save("mapa_folium_projekt.html")
+mapa_folium.save(f"{OUTPUT_DIR}/mapa_folium_projekt.html")
 
 print("-> Wygenerowano interaktywną mapę Folium: mapa_folium_projekt.html")

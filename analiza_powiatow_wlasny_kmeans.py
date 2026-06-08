@@ -2,10 +2,12 @@ import pandas as pd
 import numpy as np
 import folium
 import json
+import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import StandardScaler
-
+OUTPUT_DIR = 'result_figures'
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 # ==============================================================================
 # K-MEANS (Czysty Python)
 # ==============================================================================
@@ -181,7 +183,7 @@ plt.grid(True, linestyle='--', alpha=0.5, zorder=1)
 plt.legend(title="Profil strukturalny powiatu (GUS)", loc='upper left', fontsize=10)
 plt.tight_layout()
 
-plt.savefig('wlasny_kmeans_powiaty_scatter.png', bbox_inches='tight', dpi=150)
+plt.savefig(f'{OUTPUT_DIR}/wlasny_kmeans_powiaty_scatter.png', bbox_inches='tight', dpi=150)
 plt.close()
 print("\n-> Sukces! Wygenerowano bezbłędny wykres powiatowy: wlasny_kmeans_powiaty_scatter.png")
 
@@ -275,5 +277,5 @@ legenda_html = """
      """
 mapa.get_root().html.add_child(folium.Element(legenda_html))
 
-mapa.save("mapa_wlasny_kmeans_powiaty.html")
+mapa.save(f"{OUTPUT_DIR}/mapa_wlasny_kmeans_powiaty.html")
 print("\n-> Sukces! Wygenerowano ostateczną wersję mapy: mapa_wlasny_kmeans_powiaty.html")
