@@ -24,6 +24,20 @@ Projekt składa się z dwóch części:
 * Stworzyliśmy własny **Wskaźnik Dostępności**, który pokazuje, ile pensji trzeba odłożyć, aby kupić 1 m² mieszkania.
 * Do podziału rynków na grupy (np. drogie centra vs tańsze przedmieścia) użyliśmy algorytmu **K-means**. W części powiatowej napisaliśmy ten algorytm całkowicie od zera, aby w pełni zrozumieć, jak działa matematyka podziału danych.
 
+### Szczegóły Teoretyczne i Matematyczne (Algorytm K-means)
+Algorytm K-means (k-średnich) to metoda zrzeszania danych w grupy w taki sposób, aby elementy wewnątrz jednej grupy były do siebie jak najbardziej podobne.
+
+W klasycznym ujęciu, podobieństwo definiuje się poprzez odległość na wykresie. W projekcie stworzono własną, zoptymalizowaną implementację tego algorytmu. Opiera się ona na kwadracie odległości euklidesowej:
+$d(p, q) = \sum_{i=1}^{n} (p_i - q_i)^2$
+Zrezygnowanie z wyciągania pierwiastka kwadratowego z wyniku (co nakazuje pełny wzór matematyczny) pozwala procesorowi zaoszczędzić ogromne ilości cykli obliczeniowych.
+
+Działanie algorytmu to powtarzający się cykl:
+1. **Inicjalizacja:** System losowo zrzuca na wykres danych "środki ciężkości" (centroidy). Liczba centroidów odpowiada liczbie poszukiwanych grup.
+2. **Przypisanie:** Algorytm mierzy odległość każdego powiatu do wszystkich centroidów. Powiat trafia do tej grupy, której środek leży najbliżej.
+3. **Aktualizacja:** Po przydzieleniu wszystkich powiatów, maszyna wylicza nowy środek geometryczny dla każdej grupy na podstawie jej nowych członków. Centroidy są przesuwane w nowe, dokładniejsze pozycje.
+
+Kroki 2 i 3 są powtarzane w pętli do momentu, w którym centroidy przestaną zmieniać swoje położenie - uznajemy wtedy, że algorytm osiągnął matematyczną stabilność, a rynki zostały trwale podzielone na optymalne segmenty.
+
 ## 4. Wnioski
 * **Miasta:** W największych ośrodkach (Warszawa, Kraków, Wrocław) mieszkania są trudniej dostępne dla przeciętnego pracownika.
 * **Powiaty:** Obserwujemy zjawisko ucieczki z drogich centrów na przedmieścia – ludzie szukają większej przestrzeni w powiatach wokół dużych miast, gdzie relacja ceny do metrażu jest bardziej korzystna.
